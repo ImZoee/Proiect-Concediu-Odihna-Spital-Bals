@@ -1,10 +1,13 @@
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+=======
+>>>>>>> 494c546c82f8cb8ef8657b0b38674f8afaadeeb3
 
 public class InterfataCerereCo extends JFrame {
 
@@ -205,16 +208,23 @@ public class InterfataCerereCo extends JFrame {
         btnGenereaza.addActionListener(e -> genereazaCerere());
         btnReset.addActionListener(e -> resetFields());
 
+<<<<<<< HEAD
         int currentYear = Year.now().getValue();
         JLabel lblCopyright = new JLabel("©" +currentYear+" Toate drepturile rezervate de Spitalul Orășenesc Balș.");
         lblCopyright.setBounds(10, 580, 300, 20);
         lblCopyright.setFont(new Font("Arial", Font.PLAIN, 10));
+=======
+        JLabel lblCopyright = new JLabel("©2025 Toate drepturile rezervate de Spitalul Bals.");
+        lblCopyright.setBounds(10, 580, 300, 20);
+        lblCopyright.setFont(new Font("Arial", Font.PLAIN, 12));
+>>>>>>> 494c546c82f8cb8ef8657b0b38674f8afaadeeb3
         add(lblCopyright);
 
         //lblCopyright.setToolTipText("Email: pavelmarius28@yahoo.com");
 
         setVisible(true);
     }
+<<<<<<< HEAD
     /*Validare DataInceput Concediu*/
     private boolean validareDataInceput(){
         String dateInceput = tfDataInceput.getText();
@@ -251,6 +261,11 @@ public class InterfataCerereCo extends JFrame {
             if(!validareDataSfarsit()){
                 return;
             }
+=======
+
+    private void genereazaCerere() {
+        try {
+>>>>>>> 494c546c82f8cb8ef8657b0b38674f8afaadeeb3
             // Obține datele din câmpurile de text
             String nume = tfNume.getText();
             String matricol = tfMatricol.getText();
